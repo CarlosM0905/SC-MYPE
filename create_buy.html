@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <header style="height:0%;">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <a class="navbar-brand" href="#"><strong>Sistema Contable</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link"><i class="fas fa-dollar-sign"></i> <span
+                                class="clearfix d-none d-sm-inline-block">Registro de Ventas</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fas fa-cart-plus"></i> <span
+                                class="clearfix d-none d-sm-inline-block">Registro de Compras</span></a>
+                    </li>
+                    <li class="nav-item ml-5">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"><i
+                                class="fas fa-user"></i> <span
+                                class="clearfix d-none d-sm-inline-block">Cuenta</span></a>
+                        <div class="dropdown-menu dropdown-menu-right text-center"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Cerrar Sesion</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Main Navigation-->
+    <section>
+        <div>
+            <div class="view mask rgba-grey-strong flex-center">
+                <div class="text-center wow fadeInUp">
+                    <div class="row justify-content-center mt-5">
+                        <div class="jumbotron jumbotron-fluid mt-5">
+                            <div class="container">
+                                <!--Registro de Venta y numero de registro-->
+                                <div class="row">
+                                    <div class="col-md-9 d-flex justify-content-start">
+                                        <h3>Registro de Compras</h3>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <h3 class="mt-2">N:</h3>
+
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="md-form text-left my-0">
+                                            <input type="text" id="date" class="form-control" disabled>
+                                            <label for="date" class="disabled">000002</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2">
+                                    <div class="col-md-2 d-flex justify-content-start">
+                                        <h4 class="mt-2">Empresa:</h4>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form text-left my-0">
+                                            <input type="text" id="company" class="form-control" disabled>
+                                            <label for="company" class="disabled">Indufer SA</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-start">
+                                        <h4 class="mt-2">RUC:</h4>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form text-left my-0">
+                                            <input type="text" id="ruc" class="form-control" disabled>
+                                            <label for="ruc" class="disabled">2012153231</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-2 d-flex justify-content-start">
+                                        <h4 class="mt-2">Periodo:</h4>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form text-left my-0">
+                                            <input type="text" id="period" class="form-control" disabled>
+                                            <label for="period" class="disabled">Junio 2019</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!--Tabla con-->
+                                        <!-- Table with panel -->
+                                        <div class="card card-cascade narrower">
+
+                                            <!--Card image-->
+                                            <div
+                                                class="view-cascade bg-default narrower py-2 mx-2 mb-3 d-flex justify-content-between align-items-center">
+
+
+                                                <a href="" class="white-text mx-3">Ventas</a>
+
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn btn-outline-white btn-rounded btn-sm px-2">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-white btn-rounded btn-sm px-2">
+                                                        <i class="fas fa-pencil-alt mt-0"></i>
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-white btn-rounded btn-sm px-2">
+                                                        <i class="far fa-trash-alt mt-0"></i>
+                                                    </button>
+
+                                                </div>
+
+                                            </div>
+                                            <!--/Card image-->
+
+                                            <div class="px-4">
+
+                                                <div class="table-responsive">
+                                                    <!--Table-->
+                                                    <table class="table table-hover w-auto mb-0">
+
+                                                        <!--Table head-->
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="th-md">
+                                                                    <i class="fas fa-check"></i>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a>N. Operación</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">Fecha Emisión</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">N. Comprobante</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">Tipo Proveedor</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">RUC</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">Razon Social</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">N. Cuenta</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">Base Imponible</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">IGV</a>
+                                                                </th>
+                                                                <th class="th-md">
+                                                                    <a href="">Total</a>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <!--Table head-->
+
+                                                        <!--Table body-->
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row" class="">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="checkbox1">
+                                                                    <label class="form-check-label" for="checkbox1"
+                                                                        class="label-table"></label>
+                                                                </th>
+                                                                <td>01</td>
+                                                                <td>2018-12-24</td>
+                                                                <td>00001</td>
+                                                                <td>02</td>
+                                                                <td>10739734687</td>
+                                                                <td>Carlos Rodriguez</td>
+                                                                <td>73781</td>
+                                                                <td>137.125</td>
+                                                                <td>10.00</td>
+                                                                <td>147.125</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td><strong>Totales:</strong></td>
+                                                                    <td>137.125</td>
+                                                                    <td>10.00</td>
+                                                                    <td>147.125</td>
+                                                                </tr>
+
+
+                                                        </tbody>
+                                                        <!--Table body-->
+                                                    </table>
+
+
+                                                </div>
+
+                                                <!--Table-->
+                                            </div>
+
+                                        </div>
+                                        <div class="row d-flex justify-content-center mt-4">
+                                                <button type="button" class="btn btn-default">Registrar Compras</button>
+                                        </div>
+                                    </div>
+                                    <!-- Table with panel -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-default darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-1">
+                    <div class="mb-5 flex-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f fa-md white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic" href="https://google.com">
+                            <i class="fab fa-google-plus-g fa-md white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="ghb-ic" href="https://github.com">
+                            <i class="fab fa-github fa-md white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright - UNMSM
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
