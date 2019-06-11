@@ -1,0 +1,144 @@
+<div class="container" style="margin-top:80px;">
+    <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 my-4">
+
+
+            <div class="card card-cascade wider">
+
+                <div class="view view-cascade overlay mt-4">
+                    <div class="row bg-white justify-content-center">
+                        <img class="card-img-top" src="./img/edit.png" style="width: 125px;" alt="Card image cap">
+                    </div>
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <div class="card-body card-body-cascade text-center">
+
+                    <h4 class="card-title"><strong>Editar</strong></h4>
+                    <h5 class="text-warning pb-2"><strong>Registro de Compras</strong></h5>
+                    <p class="card-text">Ingrese aqui para editar un registro de compras existente en
+                        el sistema para su empresa.</p>
+
+                    <button type="button" class="btn btn-warning mt-4" data-toggle="modal"
+                        data-target="#modalEdit">Editar</button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mt-2">
+            <div class="card card-cascade wider">
+
+                <div class="view view-cascade overlay mt-4">
+                    <div class="row bg-white justify-content-center">
+                        <img class="card-img-top" src="./img/create.png" style="width: 125px;" alt="Card image cap">
+                    </div>
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <div class="card-body card-body-cascade text-center">
+
+                    <h4 class="card-title"><strong>Crear</strong></h4>
+                    <h5 class="text-default pb-2"><strong>Registro de Compras</strong></h5>
+                    <p class="card-text">Ingrese aqui para iniciar un registro de compras desde cero
+                        con el periodo actual.</p>
+
+                    <a class="btn btn-default mt-4" href="/dashboard/add_buy">Crear</a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mt-4">
+            <div class="card card-cascade wider">
+
+                <div class="view view-cascade overlay mt-4">
+                    <div class="row bg-white justify-content-center">
+                        <img class="card-img-top" src="./img/delete.png" style="width: 125px;" alt="Card image cap">
+                    </div>
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <div class="card-body card-body-cascade text-center">
+
+                    <h4 class="card-title"><strong>Eliminar</strong></h4>
+                    <h5 class="text-danger pb-2"><strong>Registro de Compras</strong></h5>
+                    <p class="card-text">Ingrese aqui para eliminar un registro de compras existente.
+                    </p>
+
+                    <button type="button" class="btn btn-danger mt-4" data-toggle="modal"
+                        data-target="#modalDelete">Eliminar</button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- To change the direction of the modal animation change .right class -->
+        <div class="modal fade left" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+
+            <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+            <div class="modal-dialog modal-side modal-top-left" role="document">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Listado Registro de Compras</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <select class="browser-default custom-select">
+                            <option selected>Seleccionar registro</option>
+                            <option value="1">asda</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cerrar</button>
+                        <a class="btn btn-primary btn-sm" href="/dashboard/add_sell">Editar</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade right" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+
+            <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+            <div class="modal-dialog modal-side modal-top-right" role="document">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Listado Registro de Compras</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <select class="browser-default custom-select">
+                            <option selected>Seleccionar registro</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary btn-sm">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
