@@ -2,6 +2,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const morgan = require('morgan');
 const path = require('path');
+const cookieParser = require('cookie-parser');
 
 // Inicializaciones
 const app = express();
@@ -26,7 +27,7 @@ app.use(express.urlencoded({
     extended:false
 }));
 app.use(express.json());
-
+app.use(cookieParser());
 // Variables globales
 app.use((req,res,next)=>{
     next();
